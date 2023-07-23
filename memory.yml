@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: bismayapod
+spec:
+  containers:
+  - name: bismayacontainer
+    image: nginx:latest
+    resources:
+      requests:
+        cpu: "100m"     # 100 milliCPU units (0.1 CPU)
+        memory: "256Mi" # 256 Mebibytes
+      limits:
+        cpu: "200m"     # 200 milliCPU units (0.2 CPU)
+        memory: "512Mi" # 512 Mebibytes

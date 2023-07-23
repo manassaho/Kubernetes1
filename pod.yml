@@ -1,0 +1,15 @@
+pods
+========================
+ apiVersion: v1
+kind: Pod
+metadata:
+  name: bismayapod
+  labels:
+    app: my-app
+spec:
+  containers:
+  - name: bismayacontainer
+    image: nginx:latest
+    ports:
+    - containerPort: 80
+
